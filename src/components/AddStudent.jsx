@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './styles/AddStudent.css'
 import { useStudentData } from "../StudentDataContext";
+import { Link } from "react-router-dom";
 
 function AddStudent(){
 
@@ -18,18 +19,19 @@ function AddStudent(){
 
     const clickHandler = (e) => {
         e.preventDefault();
-        console.log(studentData);
+        
         setStudentData({
-          name: "",
-          classno: "",
-          house: "",
-          city: "",
-          state: "",
-          email: "",
-          contact: "",
-          dob: "",
-          gender: "",
+          name: name,
+          classno: classno,
+          house: house,
+          city: city,
+          state: state,
+          email: email,
+          contact: contact,
+          dob: dob,
+          gender: gender,
         });
+        console.log(studentData);
       };
 
     return(
@@ -121,6 +123,7 @@ function AddStudent(){
                     </label>
                 
                 <button type="submit">Add Student</button>
+                <Link to = "/display"><button>Display Student</button></Link>
 
             </form>
         </div>

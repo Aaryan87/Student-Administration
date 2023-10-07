@@ -21,7 +21,7 @@ import { Route, Routes,} from "react-router-dom";
       {/* <AddStudent/>
       <DisplayStudentData/> */}
      
-      <StudentDataProvider>
+      
         <div>
           <Routes>
             <Route path='/' element = {<Firstpage />} />
@@ -30,7 +30,7 @@ import { Route, Routes,} from "react-router-dom";
             <Route path="/display" element={<DisplayStudentData />} />
           </Routes>
         </div>
-      </StudentDataProvider>
+     
     
     </div>
   );

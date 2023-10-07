@@ -3,7 +3,7 @@ import { useStudentData } from "../StudentDataContext";
 
 function DisplayStudentData() {
   const { studentData } = useStudentData();
-
+console.log(studentData)
   return (
     <div className="container">
       <h2>Student Data</h2>
