@@ -1,7 +1,4 @@
 import { useState } from 'react';
-/* import Register from './FormInReact/Register'; */
-/* import Firstpage from './Form/Firstpage'; */
-/* import SignIn from './Form/SignIn'; */
 import AddStudent from './components/AddStudent';
 import DisplayStudentData from './components/DisplayStudent';
 import Firstpage from './pages/FirstPage/Firstpage'
@@ -15,11 +12,6 @@ import { Route, Routes,} from "react-router-dom";
 
   return (
     <div className="App">
-      {/* <Register/> */}
-      {/* <Firstpage/> */}
-      {/* <SignIn/> */}
-      {/* <AddStudent/>
-      <DisplayStudentData/> */}
      
       <StudentDataProvider>
         <div>
