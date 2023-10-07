@@ -1,0 +1,61 @@
+/* AddStudent.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Background color for the page */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff; /* Background color for the form */
+    border: 2px solid #333; /* Border for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+  }
+  
+  /* Rest of your CSS remains unchanged */
+  
+  
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="radio"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3498db; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9; /* Button color on hover */
+  }
+  
