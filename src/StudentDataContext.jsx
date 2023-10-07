@@ -3,9 +3,9 @@ import React, { createContext, useContext, useState } from "react";
 
 const StudentDataContext = createContext();
 
-export function useStudentData() {
-  return useContext(StudentDataContext);
-}
+
+
+export const useStudentData = () => useContext(StudentDataContext)
 
 export function StudentDataProvider({ children }) {
   const [studentData, setStudentData] = useState({

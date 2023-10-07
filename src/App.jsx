@@ -13,7 +13,7 @@ import { Route, Routes,} from "react-router-dom";
   return (
     <div className="App">
      
-      <StudentDataProvider>
+      
         <div>
           <Routes>
             <Route path='/' element = {<Firstpage />} />
@@ -22,7 +22,7 @@ import { Route, Routes,} from "react-router-dom";
             <Route path="/display" element={<DisplayStudentData />} />
           </Routes>
         </div>
-      </StudentDataProvider>
+     
     
     </div>
   );
