@@ -7,7 +7,7 @@ function Firstpage() {
   return (
     <div className="wrapper">
       <div className="container-welcome">
-        <h1>Welcome to the Dashboard</h1>
+        <h1>Welcome to the School Management</h1>
         <div className="button-container">
           <Link to="/signin">
           <button className="student-button">

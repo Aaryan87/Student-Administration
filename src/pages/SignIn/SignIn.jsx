@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './SiginIn.css'
+import { Link } from "react-router-dom";
 
 function SignIn() {
 
@@ -28,7 +29,9 @@ function SignIn() {
                     value={pwd}
                     onChange={e => setPwd(e.target.value)}
                 />
+                <Link to="/dashboard">
                 <button>Sign In</button>
+                </Link>
                 <a href="#">Forgot Password?</a>
             </form>
             </div>
