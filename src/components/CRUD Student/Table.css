@@ -47,16 +47,16 @@
     color: white;
   }
   
-  .label-draft {
-    background-color: #777;
+  .label-Male {
+    background-color: #381cc2;
   }
   
-  .label-live {
-    background-color: #42a942;
+  .label-Female {
+    background-color: #bb17ad;
   }
   
-  .label-error {
-    background-color: #d9534f;
+  .label-Other {
+    background-color: #c1e91e;
   }
   
   .actions {

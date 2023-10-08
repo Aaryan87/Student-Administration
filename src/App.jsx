@@ -16,17 +16,23 @@ import { Modal } from './components/CRUD Student/Modal';
   const [rows, setRows] = useState([
     {
       rollno: "1",
-      name: "0",
+      name:"Aryan",
+      address: "0",
+      contact:"9464530907",
       gender: "Male",
     },
     {
       rollno: "2",
-      name: "0",
+      name:"Aryan",
+      address: "0",
+      contact:"946457",
       gender: "Male",
     },
     {
       rollno: "3",
-      name: "0",
+      name:"Aryan",
+      address: "0",
+      contact:"946451237",
       gender: "Female",
     },
   ]);
@@ -73,6 +79,8 @@ import { Modal } from './components/CRUD Student/Modal';
           defaultValue={rowToEdit !== null && rows[rowToEdit]}
         />
       )}
+
+
           <Routes>
             <Route path='/' element = {<Firstpage />} />
             <Route path='/signin' element={<SignIn />} />
