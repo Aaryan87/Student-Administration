@@ -3,6 +3,7 @@ import DisplayStudentData from './components/DisplayStudent';
 import Firstpage from './pages/FirstPage/Firstpage'
 import SignIn from './pages/SignIn/SignIn';
 import StudentTable from './components/student-table/StudentTable';
+import FileUpload from './components/FileUpload/FileUpload';
 import { Route, Routes,} from "react-router-dom";
 
 
@@ -15,6 +16,7 @@ import { Route, Routes,} from "react-router-dom";
             <Route path="/add"  element={<AddStudent />} />
             <Route path="/display" element={<DisplayStudentData />} />
             <Route path='/studentlist' element={<StudentTable />} />
+            <Route path='/file-upload' element={<FileUpload/>}/>
           </Routes>
         </div>
   );
