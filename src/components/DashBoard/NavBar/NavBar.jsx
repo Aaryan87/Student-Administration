@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [active, setActive] = useState("nav__menu");
@@ -19,31 +20,41 @@ function NavBar() {
         MiniChalkpad
       </a>
       <ul className={active}>
+      <Link to="/dashboard">
         <li className="nav__item">
           <a href="#" className="nav__link">
             Home
           </a>
         </li>
+        </Link>
+        <Link>
         <li className="nav__item">
           <a href="#" className="nav__link">
             Admin
           </a>
         </li>
+        </Link>
+        <Link>
+        <Link>
         <li className="nav__item">
           <a href="#" className="nav__link">
             AboutUs
           </a>
         </li>
+        </Link>
+        </Link>
         <li className="nav__item">
           <a href="#" className="nav__link">
             Contact
           </a>
         </li>
+        <Link to="/signin">
         <li className="nav__item">
           <a href="#" className="nav__link">
             SignIn/SignUp
           </a>
         </li>
+        </Link>
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>

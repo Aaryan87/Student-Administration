@@ -50,6 +50,21 @@ const StudentTable = () => {
           })
         );
   };
+
+  const [filteredRows, setFilteredRows] = useState([]);
+
+  const handleFilter = (filterCriteria) => {
+    // Apply the filter criteria to your rows and update the displayed rows.
+    const filteredRows = rows.filter((row) => {
+      return (
+        (filterCriteria.gender === "" || row.gender === filterCriteria.gender) && (filterCriteria.rollno === "" || row.rollno === filterCriteria.rollno) &&
+        (filterCriteria.name === "" || row.name.includes(filterCriteria.name))
+      );
+    });
+
+    setFilteredRows(filteredRows);
+  };
+
   return (
     <div>
       <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
