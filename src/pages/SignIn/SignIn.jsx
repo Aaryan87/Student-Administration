@@ -32,6 +32,9 @@ function SignIn() {
                 <Link to="/dashboard">
                 <button>Sign In</button>
                 </Link>
+                <Link to="/signup">
+                <a>Don't have account?</a>
+                </Link>
                 <a href="#">Forgot Password?</a>
             </form>
             </div>
