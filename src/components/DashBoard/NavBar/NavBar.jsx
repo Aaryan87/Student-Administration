@@ -35,19 +35,19 @@ function NavBar() {
         </li>
         </Link>
         <Link>
-        <Link>
         <li className="nav__item">
           <a href="#" className="nav__link">
             AboutUs
           </a>
         </li>
         </Link>
-        </Link>
+        <Link>
         <li className="nav__item">
           <a href="#" className="nav__link">
             Contact
           </a>
         </li>
+        </Link>
         <Link to="/signin">
         <li className="nav__item">
           <a href="#" className="nav__link">

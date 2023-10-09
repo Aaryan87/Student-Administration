@@ -5,6 +5,7 @@ import FileUpload from './components/FileUpload/FileUpload';
 import { Route, Routes,} from "react-router-dom";
 import StaffTable from './components/staff-table/StaffTable';
 import DisplayDashBoard from './components/DashBoard/DisplayDashBoard/DisplayDashBoard';
+import Signup from './components/Signup/Signup';
 
 
 
@@ -14,6 +15,7 @@ import DisplayDashBoard from './components/DashBoard/DisplayDashBoard/DisplayDas
           <Routes>
             <Route path='/' element = {<Firstpage />} />
             <Route path='/signin' element={<SignIn />} />
+            <Route path='/signup' element={<Signup/>}/>
             <Route path='/dashboard' element={<DisplayDashBoard/>} />
             <Route path='/studentlist' element={<StudentTable />} />
             <Route path='/stafflist' element={<StaffTable/>} />

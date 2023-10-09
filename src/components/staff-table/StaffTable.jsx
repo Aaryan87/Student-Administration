@@ -51,6 +51,8 @@ const StaffTable = () => {
         );
   };
 
+  const [filteredRows, setFilteredRows] = useState([]);
+
   const handleFilter = (filterCriteria) => {
     // Apply the filter criteria to your rows and update the displayed rows.
     const filteredRows = rows.filter((row) => {
