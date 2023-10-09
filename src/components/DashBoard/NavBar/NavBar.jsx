@@ -16,9 +16,9 @@ function NavBar() {
   };
   return (
     <nav className="nav">
-      <a href="#" className="nav__brand">
+      <Link to="/" className="nav__brand">
         MiniChalkpad
-      </a>
+      </Link>
       <ul className={active}>
       <Link to="/dashboard">
         <li className="nav__item">
