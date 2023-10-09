@@ -7,6 +7,7 @@ import StaffTable from './components/staff-table/StaffTable';
 import DisplayDashBoard from './components/DashBoard/DisplayDashBoard/DisplayDashBoard';
 import Signup from './components/Signup/Signup';
 import AllStaffFilterData from './components/CRUD Staff/AllStaffFilterData/AllStaffFilterData';
+import FilteringPage from './components/CRUD Student/FilterData/FilterPage';
 
 
 
@@ -22,6 +23,7 @@ import AllStaffFilterData from './components/CRUD Staff/AllStaffFilterData/AllSt
             <Route path='/stafflist' element={<StaffTable/>} />
             <Route path='/studentfilterdata' element={<AllStaffFilterData/>}/>
             <Route path='/file-upload' element={<FileUpload/>}/>
+            <Route path='/filter' element={<FilteringPage />} />
           </Routes>
         </div>
   );

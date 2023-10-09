@@ -1,80 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Table } from "../CRUD Student/Table";
 import { Modal } from "../CRUD Student/Modal";
-import FilterData from "../CRUD Student/FilterData/FilterData";
-import FilterComponent from "../CRUD Student/FilterComponent/FilterComponent";
+import { Link } from "react-router-dom";
+import { useStudentContext } from "../../context/StudentContext";
+import './student.css'
 
 const StudentTable = () => {
+  const { students, setStudents } = useStudentContext();
   const [modalOpen, setModalOpen] = useState(false);
-  const [rows, setRows] = useState([
-    {
-      rollno: "1",
-      name: "Aryan",
-      address: "0",
-      contact: "9464530907",
-      gender: "Male",
-    },
-    {
-      rollno: "2",
-      name: "Aryan",
-      address: "0",
-      contact: "946457",
-      gender: "Male",
-    },
-    {
-      rollno: "3",
-      name: "Aryan",
-      address: "0",
-      contact: "946451237",
-      gender: "Female",
-    },
-  ]);
   const [rowToEdit, setRowToEdit] = useState(null);
 
   const handleDeleteRow = (targetIndex) => {
-    setRows(rows.filter((_, idx) => idx !== targetIndex));
+    setStudents((prevStudents) =>
+      prevStudents.filter((_, idx) => idx !== targetIndex)
+    );
   };
 
   const handleEditRow = (idx) => {
     setRowToEdit(idx);
-
     setModalOpen(true);
   };
 
   const handleSubmit = (newRow) => {
-    rowToEdit === null
-      ? setRows([...rows, newRow])
-      : setRows(
-          rows.map((currRow, idx) => {
-            if (idx !== rowToEdit) return currRow;
-
-            return newRow;
-          })
-        );
-  };
-
-  const [filteredRows, setFilteredRows] = useState([]);
-
-  const handleFilter = (filterCriteria) => {
-    // Apply the filter criteria to your rows and update the displayed rows.
-    const filteredRows = rows.filter((row) => {
-      return (
-        (filterCriteria.gender === "" || row.gender === filterCriteria.gender) && (filterCriteria.rollno === "" || row.rollno === filterCriteria.rollno) &&
-        (filterCriteria.name === "" || row.name.includes(filterCriteria.name))
-      );
+    setStudents((prevStudents) => {
+      if (rowToEdit === null) {
+        return [...prevStudents, newRow];
+      } else {
+        return prevStudents.map((currRow, idx) => {
+          return idx !== rowToEdit ? currRow : newRow;
+        });
+      }
     });
 
-    setFilteredRows(filteredRows);
+    setRowToEdit(null);
   };
+
+  useEffect(() => {
+    // You can perform any data fetching or updates here if needed
+  }, []);
 
   return (
     <div>
-    <FilterData filteredData={filteredRows} />
-    <FilterComponent onFilter={handleFilter} />
-      <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
-      <button onClick={() => setModalOpen(true)} className="btn">
+      <div className="main-holder">
+      <Table rows={students} deleteRow={handleDeleteRow} editRow={handleEditRow} className="student-table"/>
+      <button onClick={() => setModalOpen(true)} className="btn btn-student-table">
         Add
       </button>
+      <Link to="/filter">Go to Filtering Page</Link>
+      </div>
       {modalOpen && (
         <Modal
           closeModal={() => {
@@ -82,7 +55,7 @@ const StudentTable = () => {
             setRowToEdit(null);
           }}
           onSubmit={handleSubmit}
-          defaultValue={rowToEdit !== null && rows[rowToEdit]}
+          defaultValue={rowToEdit !== null && students[rowToEdit]}
         />
       )}
     </div>

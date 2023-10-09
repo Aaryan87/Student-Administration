@@ -11,9 +11,9 @@ function DisplayDashBoard(props){
     return(
         <div>
             <NavBar/>
-            <Card title="Add Student" function={temp} content="Check Here"/>
-            <Card title="Add Staff" content="Check Here"/>
-            <Card title="Assignment" content="Check Here"/>
+            <Card title="Add Student" function={temp} content="Check Here" path="/studentlist"/>
+            <Card title="Add Staff" content="Check Here" path="/stafflist"/>
+            <Card title="Assignment" content="Check Here" path="/file-upload"/>
         </div>
     );
 }
