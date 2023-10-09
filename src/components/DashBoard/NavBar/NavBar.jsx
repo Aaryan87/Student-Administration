@@ -15,11 +15,10 @@ function NavBar() {
     } else setIcon("nav__toggler");
   };
   return (
-    //FIX: change <a> tags to links with proper routes
     <nav className="nav">
-      <Link to="/" className="nav__brand">
+      <a href="#" className="nav__brand">
         MiniChalkpad
-      </Link>
+      </a>
       <ul className={active}>
       <Link to="/dashboard">
         <li className="nav__item">
