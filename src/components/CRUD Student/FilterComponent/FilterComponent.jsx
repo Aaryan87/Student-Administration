@@ -23,6 +23,7 @@ function FilterComponent({ onFilter }) {
   };
 
   return (
+    <div className="wrapper-form2">
     <form onSubmit={handleSubmit}>
     <label>
         RollNo:
@@ -56,6 +57,7 @@ function FilterComponent({ onFilter }) {
 
       <button type="submit">Apply Filter</button>
     </form>
+    </div>
   );
 }
 

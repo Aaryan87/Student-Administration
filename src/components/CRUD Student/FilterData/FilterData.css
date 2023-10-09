@@ -1,9 +1,9 @@
-div {
+.studentfilter-data {
     text-align: center;
   }
   
   /* Style the table */
-  table {
+  .studentfilter-tabledata {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;

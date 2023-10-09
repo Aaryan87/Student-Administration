@@ -1,14 +1,14 @@
 /* FilterComponent.css */
 
-form {
+.wrapper-form2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* width: 200px; */
     padding: 20px;
-    background-color: #fff; /* Background color for the form */
-    border: 2px solid #333; /* Border for the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+    background-color: #f8f4f400;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
   
   label {
@@ -27,7 +27,7 @@ form {
   button {
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #3498db; /* Button color */
+    background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -37,6 +37,6 @@ form {
   }
   
   button:hover {
-    background-color: #2980b9; /* Button color on hover */
+    background-color: #2980b9;
   }
   

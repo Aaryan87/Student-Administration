@@ -3,9 +3,9 @@ import './StaffFilterData.css'
 
 function StaffFilterData({ filteredData }) {
   return (
-    <div>
+    <div className="filter-wrapper">
       <h2>Filtered Data</h2>
-      <table>
+      <table className="filter-data-table">
         <thead>
           <tr>
             <th>RollNo</th>

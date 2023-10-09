@@ -1,8 +1,8 @@
-.table-wrapper {
+.stafftable-wrappers {
     width: 100%;
   }
   
-  .table {
+  .stafftable {
     display: block;
     overflow: hidden;
     table-layout: fixed;
@@ -17,23 +17,23 @@
     overflow-x: auto;
   }
   
-  .table thead {
+  .stafftable .staffthead {
     background-color: #ccc;
     color: #222;
   }
   
-  .table th,
-  .table td {
+  .stafftable th,
+  .stafftable td {
     padding: 0.8rem;
   }
   
-  .table td {
+  .stafftable td {
     border-top: 0.5px solid #ddd;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   
-  .table tbody tr:hover {
+  .stafftable tbody tr:hover {
     background-color: #eee;
   }
   

@@ -6,9 +6,9 @@ import "./TableStaff.css";
 
 export const TableStaff = ({ rows, deleteRow, editRow }) => {
   return (
-    <div className="table-wrapper">
-      <table className="table">
-        <thead>
+    <div className="stafftable-wrappers">
+      <table className="stafftable">
+        <thead className="staffthead">
           <tr>
             <th>RollNo.</th>
             <th>Name</th>

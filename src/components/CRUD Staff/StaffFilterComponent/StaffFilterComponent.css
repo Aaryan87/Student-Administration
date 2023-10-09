@@ -1,6 +1,6 @@
 /* FilterComponent.css */
 
-form {
+.form-newwrapper {
     display: flex;
     flex-direction: column;
     align-items: center;

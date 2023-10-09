@@ -68,7 +68,7 @@ const StaffTable = () => {
   return (
     <div>
       <TableStaff rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
-      <button onClick={() => setModalOpen(true)} className="btn">
+      <button type="submit" className="btn1" onClick={() => setModalOpen(true)} >
         Add
       </button>
       {modalOpen && (

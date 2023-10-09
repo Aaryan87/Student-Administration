@@ -1,12 +1,12 @@
 /* Add this CSS to your stylesheets */
 
 /* Style the table container */
-div {
+.filter-wrapper {
     text-align: center;
   }
   
   /* Style the table */
-  table {
+  .filter-data-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;

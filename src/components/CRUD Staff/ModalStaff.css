@@ -1,4 +1,4 @@
-.modal-container {
+.staffmodal-container {
     position: fixed;
     z-index: 1;
     left: 0;
@@ -11,27 +11,27 @@
     justify-content: center;
   }
   
-  .modal {
+  .staffmodal {
     border-radius: 5px;
     padding: 2rem;
     background-color: white;
     width: 25em;
   }
   
-  .modal .btn {
+  .staffmodal .btn {
     display: block;
     margin: auto;
   }
   
-  .form-group {
+  .staffform-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
   }
   
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
+  .staffform-group input,
+  .staffform-group textarea,
+  .staffform-group select {
     border: 1px solid black;
     border-radius: 0.3rem;
     padding: 0.3rem;
