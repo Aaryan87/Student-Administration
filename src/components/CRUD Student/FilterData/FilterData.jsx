@@ -3,9 +3,9 @@ import './FilterData.css'
 
 function FilterData({ filteredData }) {
   return (
-    <div>
+    <div className="studentfilter-data">
       <h2>Filtered Data</h2>
-      <table>
+      <table className="studentfilter-tabledata">
         <thead>
           <tr>
             <th>RollNo</th>

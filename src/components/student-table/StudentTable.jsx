@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Table } from "../CRUD Student/Table";
 import { Modal } from "../CRUD Student/Modal";
+import FilterData from "../CRUD Student/FilterData/FilterData";
+import FilterComponent from "../CRUD Student/FilterComponent/FilterComponent";
 
 const StudentTable = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -67,6 +69,8 @@ const StudentTable = () => {
 
   return (
     <div>
+    <FilterData filteredData={filteredRows} />
+    <FilterComponent onFilter={handleFilter} />
       <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
       <button onClick={() => setModalOpen(true)} className="btn">
         Add

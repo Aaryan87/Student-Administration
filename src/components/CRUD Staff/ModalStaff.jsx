@@ -39,24 +39,24 @@ export const ModalStaff = ({ closeModal, onSubmit, defaultValue }) => {
 
   return (
     <div
-      className="modal-container"
+      className="staffmodal-container"
       onClick={(e) => {
-        if (e.target.className === "modal-container") closeModal();
+        if (e.target.className === "staffmodal-container") closeModal();
       }}
     >
-      <div className="modal">
+      <div className="staffmodal">
         <form>
           <div className="form-group">
             <label htmlFor="rollno">RollNo</label>
             <input name="rollno" onChange={handleChange} value={formState.rollno} />
           </div>
 
-          <div className="form-group">
+          <div className="staffform-group">
             <label htmlFor="name">Name</label>
             <input name="name" onChange={handleChange} value={formState.name} />
           </div>
 
-          <div className="form-group">
+          <div className="staffform-group">
             <label htmlFor="address">Address</label>
             <input
               name="address"
@@ -65,7 +65,7 @@ export const ModalStaff = ({ closeModal, onSubmit, defaultValue }) => {
             />
           </div>
 
-          <div className="form-group">
+          <div className="staffform-group">
             <label htmlFor="contact">ContactNo</label>
             <input
               name="contact"
@@ -74,7 +74,7 @@ export const ModalStaff = ({ closeModal, onSubmit, defaultValue }) => {
             />
           </div>
 
-          <div className="form-group">
+          <div className="staffform-group">
             <label htmlFor="gender">Gender</label>
             <select
               name="gender"

@@ -23,7 +23,7 @@ function StaffFilterComponent({ onFilter }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-newwrapper" >
     <label>
         RollNo:
         <input
