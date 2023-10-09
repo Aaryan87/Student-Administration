@@ -1,0 +1,73 @@
+.stafftable-wrappers {
+    width: 100%;
+  }
+  
+  .stafftable {
+    display: block;
+    overflow: hidden;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 0px 10px 10px #ccc;
+    border-radius: 10px;
+    white-space: nowrap;
+    width: 100em;
+    max-width: 80%;
+    margin: auto;
+    table-layout: auto;
+    overflow-x: auto;
+  }
+  
+  .stafftable .staffthead {
+    background-color: #ccc;
+    color: #222;
+  }
+  
+  .stafftable th,
+  .stafftable td {
+    padding: 0.8rem;
+  }
+  
+  .stafftable td {
+    border-top: 0.5px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .stafftable tbody tr:hover {
+    background-color: #eee;
+  }
+  
+  .expand {
+    width: 100%;
+  }
+  
+  .label {
+    border-radius: 3px;
+    padding: 0.3rem;
+    color: white;
+  }
+  
+  .label-Male {
+    background-color: #381cc2;
+  }
+  
+  .label-Female {
+    background-color: #bb17ad;
+  }
+  
+  .label-Other {
+    background-color: #c1e91e;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .actions svg {
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    color: #e10d05;
+  }
